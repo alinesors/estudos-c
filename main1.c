@@ -22,4 +22,5 @@ int main(){
     else{
         printf("a e igual a b");
     }
+    return 0;
 }
