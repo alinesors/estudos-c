@@ -94,6 +94,32 @@ void operadora(){
     }
 }
 
+void troco(){
+
+    float precoUni, dinheiro, troco;
+    int qtd;
+
+    printf("preco unitario: ");
+    scanf("%f", &precoUni);
+
+    printf("qtd  comprada: ");
+    scanf("%d", &qtd);
+
+    printf("dinheiro recebido: ");
+    scanf("%f", &dinheiro);
+
+    produto = qtd * precoUni;
+
+    if(dinheiro > preduto){
+        troco = dinheiro - produto ;
+        printf("troco: %.2f", troco); 
+    }
+    else if(dinheiro < produto){
+        troco = produto - dinheiro;
+        printf("DINHEIRO INSUFICIENTE. FALTAM %.2f REAIS", troco); 
+    }
+}
+
 
 void main(){
 
@@ -101,6 +127,7 @@ void main(){
     baskara();
     menor3();
     operadora();
+    troco();
 
 
     return 0;
