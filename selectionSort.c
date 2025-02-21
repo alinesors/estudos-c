@@ -45,7 +45,6 @@ int main() {
         vet = aux;
         vet[contador++] = num;
     }
-
     if (contador > 0) {
         selectionSortCrescente(vet, contador);
     }
