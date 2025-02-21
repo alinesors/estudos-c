@@ -11,20 +11,20 @@ void insertionSortCrescente(int *vet, int n) {
     }
     printf("\n");
 
-    for (i = 1; i < n; i++) {
-        key = vet[i];
-        j = i - 1;
+    for (i = 1; i < n; i++) { //anda o vetor pela posiçao 2
+        key = vet[i]; //guarda o valor 
+        j = i - 1; 
 
         while (j >= 0 && vet[j] > key) {
-            vet[j + 1] = vet[j];
+            vet[j + 1] = vet[j]; // faz a deslocação
             j--;
         }
         
-        vet[j + 1] = key;
+        vet[j + 1] = key; // insere na posi certa
 
         if (vet[j + 1] != vet[i]) { 
             for (j = 0; j < n; j++) {
-                printf("%d ", vet[j]);
+                printf("%d ", vet[j]); //imprime se tiver feito a troca
             }
             printf("\n");
         }
