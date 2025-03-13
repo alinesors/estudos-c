@@ -5,7 +5,7 @@
 
 void printVet(int *vet, int left, int right) {
     for (int i = left; i <= right; i++) {
-        printf("%d ", vet[i]);
+        printf("%d ", vet[i]);a
     }
     printf("\n");
 }
