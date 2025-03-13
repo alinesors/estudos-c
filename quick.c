@@ -10,7 +10,7 @@ void printVet(int *vet, int size) {
     printf("\n");
 }
 
-int partition(int *vet, int left, int right, int size) {
+int dividir(int *vet, int left, int right, int size) {
     int pivot = vet[right];
     printf("Subarray: ");
     for (int i = left; i <= right; i++) {
@@ -38,7 +38,7 @@ int partition(int *vet, int left, int right, int size) {
 
 void quickSortCrescente(int *vet, int left, int right, int size) {
     if (left < right) {
-        int pi = partition(vet, left, right, size);
+        int pi = dividir(vet, left, right, size);
         quickSortCrescente(vet, left, pi - 1, size);
         quickSortCrescente(vet, pi + 1, right, size);
     }
